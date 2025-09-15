@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Movies | StoryIndex</title>
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+</head>
+<body>
+   <header>
+    <nav class="d-flex justify-content-between align-items-center p-3 border-bottom">
+      <a href="home.html"><img src="./assets/logo.png" alt="StoryIndex Logo" class="logo" style="height: 75px;width: auto;cursor: pointer;"></a>
+      <form onsubmit="return false;" action="results.html" method="get" style="display: none;">
+        <input type="text" id="searchInput" placeholder="Search here whatever you want" >
+        <i class="fas fa-search" id="searchIcon"></i>
+      </form>
+      <div>
+        <a href="home.html" class="me-3">Home</a>
+        <a href="movie.html" class="me-3">Movies</a>
+        <a href="favourite.html" class="me-3">Favorites</a>
+        <a href="about.html" class="me-3">About</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="mt-5">
+        <h2 class="text-center mt-5 mb-4">Trending movies in 2025</h2>
+        <div id="trendingMovie" class="container d-flex flex-wrap justify-content-center gap-3">
+          
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>StoryIndex</h3>
+      <p>Discover and explore stories, movies, and books that match your choices.</p>
+    </div>
+
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="movie.html">Movies</a></li>
+        <li><a href="favourite.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 StoryIndex | Made with <i class="fa-solid fa-heart"></i> by Tejas</p>
+  </div>
+</footer>
+<script src="movie.js"></script>
+</body>
+</html>

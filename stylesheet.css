@@ -33,69 +33,6 @@ nav form {
   margin-left: 4rem;
 }
 
-/* nav form input {
-  border: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-  padding: 0.4rem;
-  font-size: 14px;
-  width: 350px;
-  
-}
-
-nav form input:focus{
-    width: 450px;
-    transition: width 0.7s ease-in-out;
-}
-
-nav form i {
-  color: #aaa;
-  margin-left: 8px;
-  cursor: pointer;
-  padding-right: 10px;
-  transition: color 0.3s;
-
-}
-
-nav form i:hover {
-  color: #fff;
-}
-
-nav div {
-  font-size: 20px;
-  display: flex;
-  gap: 2rem;
-}
-
-nav div a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav div a:hover {
-  color: #050404;   
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  nav form input {
-    width: 150px;
-    max-width: 90%;  
-  }
-
-    nav form input:focus {
-        width: 250px;
-        max-width: 90%;
-        transition: width 0.7s ease-in-out ;
-    }
-} */
 
 nav form input {
   border: none;
@@ -105,14 +42,14 @@ nav form input {
   padding: 0.4rem;
   font-size: 14px;
   width: 350px;
-  max-width: 100%;              /* prevent overflow */
-  box-sizing: border-box;       /* include padding in width */
+  max-width: 100%;              
+  box-sizing: border-box;       
   transition: width 0.7s ease-in-out;
 }
 
 nav form input:focus {
   width: 450px;
-  max-width: 100%;              /* keep inside screen */
+  max-width: 100%;              
 }
 
 nav form i {
@@ -144,24 +81,27 @@ nav div a:hover {
   color: #050404;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: center;         /* center content */
+    align-items: center;   
     gap: 0.8rem;
   }
 
   nav form input {
     width: 150px;
-    max-width: 90%;              /* scale to screen */
+    max-width: 90%;        
+    transition: none;      
   }
 
   nav form input:focus {
-    width: 100%;                 /* expand full width on focus */
-    max-width: 90%;              /* safe expansion */
+    width: 150px;          
+    max-width: 90%;
+    transition: none;
   }
 }
+
 
 
 .btn{
